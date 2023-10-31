@@ -1,6 +1,6 @@
-[![CircleCI](https://circleci.com/gh/springframeworkguru/mssc-beer-order-service.svg?style=svg)](https://circleci.com/gh/springframeworkguru/mssc-beer-order-service)
+[![CircleCI](https://circleci.com/gh/andre-s-nascimento/mssc-beer-order-service.svg?style=svg)](https://circleci.com/gh/andre-s-nascimento/mssc-beer-order-service)
 
-# MSSC Beer Order Service
+# MSSC Beer Order Service - ASN
 
 This repository contains source code examples used to support my on-line courses about the Spring Framework.
 
