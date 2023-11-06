@@ -25,14 +25,16 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Lock;
 
-import javax.persistence.LockModeType;
+import jakarta.persistence.LockModeType;
 import java.util.List;
 import java.util.UUID;
+import org.springframework.stereotype.Repository;
 
 
 /**
  * Created by jt on 2019-01-26.
  */
+@Repository
 public interface BeerOrderRepository  extends JpaRepository<BeerOrder, UUID> {
 
     Page<BeerOrder> findAllByCustomer(Customer customer, Pageable pageable);
