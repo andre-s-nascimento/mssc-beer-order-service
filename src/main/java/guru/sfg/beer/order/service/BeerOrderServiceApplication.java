@@ -8,8 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan(basePackages = {"guru.sfg.beer.order.service.BeerOrderServiceApplication"})
 public class BeerOrderServiceApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(BeerOrderServiceApplication.class, args);
-    }
-
+  public static void main(String[] args) {
+    SpringApplication.run(BeerOrderServiceApplication.class, args);
+  }
 }
