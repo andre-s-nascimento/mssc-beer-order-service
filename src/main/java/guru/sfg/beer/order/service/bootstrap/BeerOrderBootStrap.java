@@ -4,9 +4,11 @@ import guru.sfg.beer.order.service.domain.Customer;
 import guru.sfg.beer.order.service.repositories.CustomerRepository;
 import java.util.UUID;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+@Slf4j
 @RequiredArgsConstructor
 @Component
 public class BeerOrderBootStrap implements CommandLineRunner {
@@ -24,8 +26,12 @@ public class BeerOrderBootStrap implements CommandLineRunner {
 
   private void loadCustomerData() {
     if (customerRepository.count() == 0) {
-      customerRepository.save(
-          Customer.builder().customerName(TASTING_ROOM).apiKey(UUID.randomUUID()).build());
+
+      Customer savedCustomer =
+          customerRepository.save(
+              Customer.builder().customerName(TASTING_ROOM).apiKey(UUID.randomUUID()).build());
+
+      log.debug("Tasting Room Customer Id: " + savedCustomer.getId().toString());
     }
   }
 }
