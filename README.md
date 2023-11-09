@@ -1,5 +1,5 @@
-[![CircleCI](https://circleci.com/gh/andre-s-nascimento/mssc-beer-order-service.svg?style=svg)](https://circleci.com/gh/andre-s-nascimento/mssc-beer-order-service)
-
+[![Java17](https://img.shields.io/badge/java-17-green)](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
+[![](https://jitpack.io/v/andre-s-nascimento/mssc-brewery-bom.svg)](https://jitpack.io/#andre-s-nascimento/mssc-brewery-bom)
 # MSSC Beer Order Service - ASN
 
 This repository contains source code examples used to support my on-line courses about the Spring Framework.
