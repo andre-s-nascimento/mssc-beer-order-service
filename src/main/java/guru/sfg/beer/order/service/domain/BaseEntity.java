@@ -7,11 +7,13 @@ import jakarta.persistence.Id;
 import jakarta.persistence.MappedSuperclass;
 import jakarta.persistence.Version;
 import java.sql.Timestamp;
+import java.sql.Types;
 import java.util.UUID;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.annotations.UpdateTimestamp;
 
 @Setter
@@ -29,7 +31,8 @@ public class BaseEntity {
 
   @Id
   @GeneratedValue(generator = "UUID", strategy = GenerationType.AUTO)
-  @Column(length = 36, columnDefinition = "uuid", updatable = false, nullable = false)
+  @Column(length = 36, columnDefinition = "varchar(36)", updatable = false, nullable = false)
+  @JdbcTypeCode(Types.VARCHAR)
   private UUID id;
 
   @Version private Long version;
