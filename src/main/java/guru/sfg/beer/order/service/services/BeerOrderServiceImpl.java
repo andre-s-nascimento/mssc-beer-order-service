@@ -11,7 +11,6 @@ import guru.sfg.brewery.model.BeerOrderPagedList;
 import java.util.Optional;
 import java.util.UUID;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -28,7 +27,7 @@ public class BeerOrderServiceImpl implements BeerOrderService {
 
     public BeerOrderServiceImpl(BeerOrderRepository beerOrderRepository,
                                 CustomerRepository customerRepository,
-                                BeerOrderMapper beerOrderMapper, ApplicationEventPublisher publisher) {
+                                BeerOrderMapper beerOrderMapper) {
         this.beerOrderRepository = beerOrderRepository;
         this.customerRepository = customerRepository;
         this.beerOrderMapper = beerOrderMapper;
