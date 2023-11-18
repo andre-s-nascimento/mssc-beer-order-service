@@ -4,6 +4,11 @@
 
 This repository contains source code examples used to support my on-line courses about the Spring Framework.
 
+### ActiveMQ/Artemis
+```bash
+ docker run --detach --name mycontainer -p 61616:61616 -p 8161:8161 --rm apache/activemq-artemis:latest-alpine
+ ```
+
 You can learn more about the courses here:
 * [Spring Boot Microservices with Spring Cloud](https://www.udemy.com/spring-boot-microservices-with-spring-cloud-beginner-to-guru/?couponCode=GIT_HUB2)
 * [Spring Framework 5: Beginner to Guru](https://www.udemy.com/course/spring-framework-5-beginner-to-guru/?couponCode=GITHUB_SFGPETCLINIC)
